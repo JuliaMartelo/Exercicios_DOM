@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modo escuro/claro 2</title>
+</head>
+<body id="Fundo">
+    <header>
+        <h1 id="Titulo">Modo Claro/Escuro</h1>
+    </header>
+    <main>
+        <button onclick="mudarTema()" id="botaoTema">Trocar tema</button>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+function mudarTema(){
+document.getElementById("Titulo").style.color = "white";
+document.getElementById("Fundo").style.backgroundColor = "black";
+}
+</script>
+</html>

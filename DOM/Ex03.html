@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+</head>
+<body>
+    <header>
+
+        <h1>Camisetas</h1>
+   
+    </header>
+    <main>
+
+        <ul id="listaItem">
+            <li>Camiseta Preta - R$50</li><button id="Preta">Adicionar</button>
+            <li>Camiseta Branca - R$40</li><button id="Branca">Adicionar</button>
+        </ul>
+
+        <ul id="Carrinho">
+
+        </ul>
+
+          
+
+        <h2>Carrinho: </h2>
+        <p>Total</p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    document.getElementById("Carrinho").appendChild(itemLista)
+
+//3. Botao de excluir
+
+let botaoExcluir = document.createElement("button");
+botaoExcluir.innerText = "Remover";
+
+itemLista.appendChild(botaoExcluir);
+
+//4. Assim que eu clicar no botao excluir, ele ira sair junto com o item
+
+botaoExcluir.onclick = function () {
+    itemLista.remove();
+}
+document.getElementById("tarefas").value = "";
+
+</script> 
+</html>
